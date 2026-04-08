@@ -12,7 +12,7 @@
 	
 	<%
 	Class.forName("com.mysql.cj.jdbc.Driver");
-	Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Hospital", "root", "password");
+	Connection conn = DriverManager.getConnection("jdbc:mysql://mysql:3306/Hospital", "root", "password");
 	%>
 	
 </body>

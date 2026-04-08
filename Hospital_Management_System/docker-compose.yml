@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: hospital-app
+    ports:
+      - "8080:8080"
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - hospital-network
+    restart: unless-stopped
+
+  mysql:
+    image: mysql:8.0
+    container_name: hospital-mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: Hospital
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - /home/blink/Hospital-Management-System/mysql_database.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-ppassword"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - hospital-network
+
+volumes:
+  mysql-data:
+
+networks:
+  hospital-network:
+    driver: bridge

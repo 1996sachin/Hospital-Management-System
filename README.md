@@ -17,6 +17,7 @@ This **Hospital Management System (HMS)** is a Java-based application designed t
 - 🧠 **Backend**: Java, JSP, Servlets, JDBC Java Database Connectivity  
 - 🗃️ **Database**: MySQL 
 - 🔐 **Security Measures**: Password hashing, session handling, input validation
+- 🐳 **Deployment**: Docker & Docker Compose (Container Orchestration)
 
 ---
 
@@ -232,12 +233,11 @@ This **Hospital Management System (HMS)** is a Java-based application designed t
 
 ---
 
- ## 📞 Contact Information
 
-  🐙 GitHub: https://github.com/pratikkhot100
+## 📞 Contact Information
 
-  💼 LinkedIn: https://www.linkedin.com/in/pratikkhot01
+🐙 GitHub: [pratikkhot100](https://github.com/pratikkhot100)
 
-  📧 Email: pratikkhot1207@gmail.com
+💼 LinkedIn: [pratikkhot01](https://www.linkedin.com/in/pratikkhot01)
 
-
+📧 Email: pratikkhot1207@gmail.com

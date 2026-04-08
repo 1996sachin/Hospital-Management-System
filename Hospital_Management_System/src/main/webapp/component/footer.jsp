@@ -1,22 +1,27 @@
 <style>
     .footer {
-        background-color: #06623B; /* Dark green color */
+        background-color: #06623B;
+        /* Dark green color */
         color: white;
         padding: 40px 0;
     }
+
     .footer a {
         color: #FFCC00;
         text-decoration: none;
     }
+
     .footer a:hover {
         color: #FFD700;
         text-decoration: underline;
     }
+
     .social-icons a {
         margin: 0 10px;
         font-size: 24px;
         color: white;
     }
+
     .social-icons a:hover {
         color: #FFD700;
     }
@@ -42,7 +47,7 @@
                     <li><a href="contact_us.jsp">Contact Us</a></li>
                 </ul>
             </div>
-            
+
             <div class="col-md-4">
                 <h5>Follow Us</h5>
                 <div class="social-icons">
@@ -53,17 +58,18 @@
                 </div>
             </div>
         </div>
-            
+
         <hr class="bg-light">
 
-                <p>
-                    <strong>Global Hospital</strong> 
-                    123, Health Street, Medical Complex, Andheri West, Mumbai, Maharashtra - 400053 India<br>
-                    <strong>Phone:</strong> +91 22 1234 5678
-                    <strong>Email:</strong> contact@globalhospital.com
-                </p>
-                
+        <p>
+            <strong>Global Hospital</strong>
+            Maharajgunj, Kathmandu, Bagmati Pradesh, Nepal<br>
+            <strong>Phone:</strong> +977-1-4512505
+            <strong>Email:</strong> hospital.info@tuth.org.np
+        </p>
+
         <!-- Copyright Text -->
-        <p class="mb-0"> &copy; 2025 <a href="https://www.linkedin.com/in/pratikkhot01">globalhospital.com</a>. All Rights Reserved. </p>
+        <p class="mb-0"> &copy; 2025 <a href="https://www.linkedin.com/in/pratikkhot01">globalhospital.com</a>. All
+            Rights Reserved. </p>
     </div>
 </footer>
