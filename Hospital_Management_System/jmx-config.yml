@@ -1,0 +1,12 @@
+lowercaseOutputLabelNames: true
+lowercaseOutputName: true
+whitelistObjectNames:
+  - "Catalina:type=GlobalRequestProcessor,name=*"
+  - "Catalina:type=ThreadPool,name=*"
+  - "java.lang:type=Memory"
+  - "java.lang:type=GarbageCollector,name=*"
+  - "java.lang:type=Threading"
+  - "java.lang:type=ClassLoading"
+  - "java.lang:type=OperatingSystem"
+rules:
+  - pattern: ".*"
