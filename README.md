@@ -18,6 +18,7 @@ This **Hospital Management System (HMS)** is a Java-based application designed t
 - 🗃️ **Database**: MySQL 
 - 🔐 **Security Measures**: Password hashing, session handling, input validation
 - 🐳 **Deployment**: Docker & Docker Compose (Container Orchestration)
+- 📊 **Monitoring**: Prometheus & Grafana (Real-time observability)
 
 ---
 
@@ -160,6 +161,8 @@ This **Hospital Management System (HMS)** is a Java-based application designed t
 - **Servlet**: Act as the controller in the MVC pattern Handle HTTP requests (e.g., login, signup, appointment booking) Process business logic, interact with the database, and forward responses to JSP pages.
 - **JDBC**: Java Database Connectivity for connecting to the database.
 - **MySQL**: Used for database management.
+- **Prometheus**: Monitoring and alerting toolkit for collecting metrics.
+- **Grafana**: Interactive visualization platform for monitoring data.
 
 ---
 
@@ -202,6 +205,12 @@ This **Hospital Management System (HMS)** is a Java-based application designed t
   Shows doctor availability.
   Allows easy navigation for patients, doctors, and admins.
 
+6. Monitoring & Observability:
+
+  Integrated Prometheus for metrics collection.
+  Grafana dashboards for real-time visualization of application health.
+  JMX, MySQL, and Node exporters for comprehensive system oversight.
+
 ---
 
 ## ⚙️ Installation
@@ -232,5 +241,24 @@ This **Hospital Management System (HMS)** is a Java-based application designed t
  - Run the Sql Query From this file: [MySQL Database](https://github.com/pratikkhot100/Hospital-Management-System/blob/main/mysql_database.sql) 
 
 ---
+
+## 📊 Monitoring Stack
+
+The system includes a dedicated monitoring stack for real-time observability of the application, database, and host system.
+
+### 🖥️ Access Dashboards
+
+- **Prometheus**: [http://localhost:9090](http://localhost:9090) (Target status, scraping, and queries)
+- **Grafana**: [http://localhost:3000](http://localhost:3000)
+  - **Username**: `admin`
+  - **Password**: `admin123`
+
+### 🔍 Monitoring Components
+
+- **JMX Exporter**: Exposes JVM and Tomcat metrics (port `9404`).
+- **MySQL Exporter**: Provides deep insights into database performance (port `9104`).
+- **Node Exporter**: Monitors host system resources like CPU, Memory, and Disk (port `9100`).
+- **Prometheus**: Aggregates all metrics from the above exporters.
+- **Grafana**: Visualizes the collected data in customizable dashboards.
 
 
