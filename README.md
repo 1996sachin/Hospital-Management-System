@@ -234,10 +234,3 @@ This **Hospital Management System (HMS)** is a Java-based application designed t
 ---
 
 
-## 📞 Contact Information
-
-🐙 GitHub: [pratikkhot100](https://github.com/pratikkhot100)
-
-💼 LinkedIn: [pratikkhot01](https://www.linkedin.com/in/pratikkhot01)
-
-📧 Email: pratikkhot1207@gmail.com
